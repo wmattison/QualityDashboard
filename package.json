@@ -5,7 +5,9 @@
   "main": "app.js",
   "dependencies": {
     "express": "^4.13.4",
-    "path": "^0.12.7"
+    "jade": "^1.11.0",
+    "path": "^0.12.7",
+    "pug": "^2.0.0-alpha7"
   },
   "devDependencies": {
     "gulp": "^3.9.1",
