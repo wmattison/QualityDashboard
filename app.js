@@ -11,12 +11,12 @@ var port = process.env.PORT || 5000;
 //express static allows you to serve statuc files from the folders mentioned, like css and javascript, or
 //like you know your whole website
 app.use(express.static('public'));
-app.use(express.static('src'));
+app.use(express.static('client'));
 
 //routing, this shit is tough. Just remember that this is the server side routes, not the client side
 //client side will be handled by angular
 app.get('/',function(req,res) {
-    res.sendFile(path.join(__dirname + '/src/views/index.html'));
+    res.sendFile(path.join(__dirname + '/client/views/index.html'));
 });
 
 app.get('/patients',function(req,res) {

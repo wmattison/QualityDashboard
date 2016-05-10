@@ -3,7 +3,7 @@ var jshint = require('gulp-jshint');
 var jscs = require('gulp-jscs');
 var nodemon = require('gulp-nodemon');
 
-var jsFiles = ['*.js','src/**/*.js'];
+var jsFiles = ['*.js','client/**/*.js'];
 
 gulp.task('style', function() {
     gulp.src(jsFiles)
@@ -31,10 +31,10 @@ gulp.task('inject',function() {
         ignorePath: '../../public'
     };
            
-    return gulp.src('./src/views/*.html')
+    return gulp.src('./client/views/*.html')
         .pipe(wiredep(options))
         .pipe(inject(injectSrc, injectOptions))
-        .pipe(gulp.dest('./src/views'));
+        .pipe(gulp.dest('./client/views'));
 
 });
 gulp.task('serve',['style','inject'], function() {
@@ -45,9 +45,9 @@ gulp.task('serve',['style','inject'], function() {
             'PORT': 3000
         },
         watch: jsFiles
-    }
+    };
     return nodemon(options)
         .on('restart',function(ev) {
             console.log('Restarting...');
         });
-})
+});

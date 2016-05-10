@@ -18,7 +18,7 @@
   "dependencies": {
     "bootstrap": "^3.3.6",
     "font-awesome": "^4.6.1",
-    "morris.js": "morrisjs#^0.5.1"
+    "slideout.js": "^0.1.12"
   },
   "overrides": {
     "bootstrap": {
@@ -28,11 +28,17 @@
         "less/bootstrap.less"
       ]
     },
-    "font-awesome" : {
+    "font-awesome": {
       "main": [
         "less/font-awesome.less",
         "css/font-awesome.min.css",
         "scss/font-awesome.scss"
+      ]
+    },
+    "slideout.js": {
+      "main": [
+        "dist/slideout.min.js",
+        "index.css"
       ]
     }
   }
