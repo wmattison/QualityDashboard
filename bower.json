@@ -18,7 +18,8 @@
   "dependencies": {
     "bootstrap": "^3.3.6",
     "font-awesome": "^4.6.1",
-    "slideout.js": "^0.1.12"
+    "slideout.js": "^0.1.12",
+    "chartist": "^0.9.7"
   },
   "overrides": {
     "bootstrap": {
@@ -33,12 +34,6 @@
         "less/font-awesome.less",
         "css/font-awesome.min.css",
         "scss/font-awesome.scss"
-      ]
-    },
-    "slideout.js": {
-      "main": [
-        "dist/slideout.min.js",
-        "index.css"
       ]
     }
   }

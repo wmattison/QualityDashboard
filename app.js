@@ -15,7 +15,8 @@ app.use(express.static('client'));
 
 //setting the viewengine here, this will affect the res.render calls from routes
 app.set('views', __dirname + '/client/views');
-app.set('view engine', 'pug');
+app.engine('html', require('ejs').renderFile);
+app.set('view engine', 'html');
 
 //routing, this shit is tough. Just remember that this is the server side routes, not the client side
 //client side will be handled by angular
@@ -25,8 +26,15 @@ app.use('/patients',patientRouter);
 var locationRouter = require('./routes/LocationRoutes.js');
 app.use('/locations',locationRouter);
 
+var dashRouter = require('./routes/DashRoutes.js');
+app.use('/dash',dashRouter);
+
+app.get('/', function(req, res) {
+    res.render('index.html');
+});
+
 app.get('*', function(req, res) {
-    res.render('404');
+    res.render('404.html');
 });
 
 //this is the acutal call to the server. I fire this off by running "npm start" from a command

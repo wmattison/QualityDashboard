@@ -1,38 +1,72 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ozarks Medical Center Quality Dashboard v2</title>
-	
-   
-   <!--bower:css-->
-   <link rel='stylesheet' href='/lib/bootstrap/dist/css/bootstrap.min.css' />
-   <link rel='stylesheet' href='/lib/font-awesome/css/font-awesome.min.css' />
-   <link rel='stylesheet' href='/lib/slideout.js/index.css' />
-   <!--endbower-->
-   
-   <!--inject:css-->
-   <link rel="stylesheet" href="/css/custom.css">
-   <!--endinject-->
-   
-   <!-- GOOGLE FONTS-->
-   <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
-   
-   <!--bower:js-->
-   <script src="/lib/jquery/dist/jquery.js"></script>
-   <script src="/lib/bootstrap/dist/js/bootstrap.js"></script>
-   <script src="/lib/emitter-es6/browser/index.js"></script>
-   <script src="/lib/slideout.js/dist/slideout.min.js"></script>
-   <!--endbower-->
-   
-   <!--inject:js-->
-   <script src="/js/dashboard_dictionary.js"></script>
-   <!--endinject-->
-  
-   
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ozarks Medical Center Quality Dashboard v2</title>
+
+
+  <!--bower:css-->
+  <link rel='stylesheet' href='/lib/bootstrap/dist/css/bootstrap.min.css' />
+  <link rel='stylesheet' href='/lib/font-awesome/css/font-awesome.min.css' />
+  <link rel='stylesheet' href='/lib/chartist/dist/chartist.min.css' />
+  <!--endbower-->
+
+  <!--inject:css-->
+  <link rel="stylesheet" href="/css/animate.min.css">
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/demo.css">
+  <link rel="stylesheet" href="/css/light-bootstrap-dashboard.css">
+  <link rel="stylesheet" href="/css/pe-icon-7-stroke.css">
+  <!--endinject-->
+
+  <!-- GOOGLE FONTS-->
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+
+  <!--bower:js-->
+  <script src="/lib/jquery/dist/jquery.js"></script>
+  <script src="/lib/bootstrap/dist/js/bootstrap.js"></script>
+  <script src="/lib/emitter-es6/browser/index.js"></script>
+  <script src="/lib/slideout.js/dist/slideout.js"></script>
+  <script src="/lib/chartist/dist/chartist.min.js"></script>
+  <!--endbower-->
+
+  <!--inject:js-->
+  <script src="/js/bootstrap-checkbox-radio-switch.js"></script>
+  <script src="/js/bootstrap-notify.js"></script>
+  <script src="/js/bootstrap-select.js"></script>
+  <script src="/js/dashboard_dictionary.js"></script>
+  <script src="/js/demo.js"></script>
+  <script src="/js/light-bootstrap-dashboard.js"></script>
+  <!--endinject-->
+
+
 </head>
+
 <body>
+  <div class="container">
+    <div class="row">
+      <div class=col-md-3></div>
+      <div class=col-md-6>
+        <form class="form-signin">
+          <h2 class="form-signin-heading">Please sign in</h2>
+          <label for="inputEmail" class="sr-only">Username</label>
+          <input type="text" id="inputUser" class="form-control" placeholder="Username" required autofocus>
+          <label for="inputPassword" class="sr-only">Password</label>
+          <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+          <div class="checkbox">
+            <label>
+            <input type="checkbox" value="remember-me"> Remember me
+          </label>
+          </div>
+          <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+        </form>
+      </div>
+      <div class=col-md-3></div>
+    </div>
+  </div>
 
 </body>
+
 </html>
