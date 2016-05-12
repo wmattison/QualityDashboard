@@ -12,10 +12,10 @@
 
 
     <!--bower:css-->
-  <link rel='stylesheet' href='/lib/bootstrap/dist/css/bootstrap.min.css' />
-  <link rel='stylesheet' href='/lib/font-awesome/css/font-awesome.min.css' />
-  <link rel='stylesheet' href='/lib/chartist/dist/chartist.min.css' />
-  <!--endbower-->
+    <link rel='stylesheet' href='..//lib/bootstrap/dist/css/bootstrap.min.css' />
+    <link rel='stylesheet' href='..//lib/font-awesome/css/font-awesome.min.css' />
+    <link rel='stylesheet' href='..//lib/chartist/dist/chartist.min.css' />
+    <!--endbower-->
 
   <!--inject:css-->
   <link rel="stylesheet" href="/css/animate.min.css">
@@ -29,11 +29,10 @@
   <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
 
   <!--bower:js-->
-  <script src="/lib/jquery/dist/jquery.js"></script>
-  <script src="/lib/bootstrap/dist/js/bootstrap.js"></script>
-  <script src="/lib/emitter-es6/browser/index.js"></script>
-  <script src="/lib/slideout.js/dist/slideout.js"></script>
-  <script src="/lib/chartist/dist/chartist.min.js"></script>
+  <script src="..//lib/jquery/dist/jquery.js"></script>
+  <script src="..//lib/bootstrap/dist/js/bootstrap.js"></script>
+  <script src="..//lib/chartist/dist/chartist.min.js"></script>
+  <script src="..//lib/angular/angular.js"></script>
   <!--endbower-->
 
   <!--inject:js-->
@@ -43,6 +42,7 @@
   <script src="/js/dashboard_dictionary.js"></script>
   <script src="/js/demo.js"></script>
   <script src="/js/light-bootstrap-dashboard.js"></script>
+  <script src="/client/controllers/app.js"></script>
   <!--endinject-->
 
 </head>
@@ -61,7 +61,7 @@
     	<div class="sidebar-wrapper">
             <div class="logo">
                 <a href="dash/dashboard" class="simple-text">
-                    Quality Dashboard v3
+                    Quality </br> Dashboard v3
                 </a>
             </div>
 
@@ -126,33 +126,7 @@
                     <a class="navbar-brand" href="#">Dashboard</a>
                 </div>
                 <div class="collapse navbar-collapse">
-                    <ul class="nav navbar-nav navbar-left">
-                        <li>
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                <i class="fa fa-dashboard"></i>
-                            </a>
-                        </li>
-                        <li class="dropdown">
-                              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                    <i class="fa fa-globe"></i>
-                                    <b class="caret"></b>
-                                    <span class="notification">5</span>
-                              </a>
-                              <ul class="dropdown-menu">
-                                <li><a href="#">Notification 1</a></li>
-                                <li><a href="#">Notification 2</a></li>
-                                <li><a href="#">Notification 3</a></li>
-                                <li><a href="#">Notification 4</a></li>
-                                <li><a href="#">Another notification</a></li>
-                              </ul>
-                        </li>
-                        <li>
-                           <a href="">
-                                <i class="fa fa-search"></i>
-                            </a>
-                        </li>
-                    </ul>
-
+                  
                     <ul class="nav navbar-nav navbar-right">
                         <li>
                            <a href="">
@@ -401,20 +375,10 @@
                                 Company
                             </a>
                         </li>
-                        <li>
-                            <a href="#">
-                                Portfolio
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                               Blog
-                            </a>
-                        </li>
-                    </ul>
+                      </ul>
                 </nav>
                 <p class="copyright pull-right">
-                    &copy; 2016 <a href="http://www.creative-tim.com">Creative Tim</a>, made with love for a better web
+                    &copy; 2016 <a href="http://ozakesmedicalcenter.com">Ozarks Medical Center</a>, from the office of Business Intelligence #6050
                 </p>
             </div>
         </footer>
@@ -425,27 +389,7 @@
 
 </body>
 
-    <!--   Core JS Files   -->
-    <script src="assets/js/jquery-1.10.2.js" type="text/javascript"></script>
-	<script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
 
-	<!--  Checkbox, Radio & Switch Plugins -->
-	<script src="assets/js/bootstrap-checkbox-radio-switch.js"></script>
-
-	<!--  Charts Plugin -->
-	<script src="assets/js/chartist.min.js"></script>
-
-    <!--  Notifications Plugin    -->
-    <script src="assets/js/bootstrap-notify.js"></script>
-
-    <!--  Google Maps Plugin    -->
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
-
-    <!-- Light Bootstrap Table Core javascript and methods for Demo purpose -->
-	<script src="assets/js/light-bootstrap-dashboard.js"></script>
-
-	<!-- Light Bootstrap Table DEMO methods, don't include it in your project! -->
-	<script src="assets/js/demo.js"></script>
 
 	<script type="text/javascript">
     	$(document).ready(function(){

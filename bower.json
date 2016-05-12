@@ -18,8 +18,8 @@
   "dependencies": {
     "bootstrap": "^3.3.6",
     "font-awesome": "^4.6.1",
-    "slideout.js": "^0.1.12",
-    "chartist": "^0.9.7"
+    "chartist": "^0.9.7",
+    "angular": "1.5.5"
   },
   "overrides": {
     "bootstrap": {
