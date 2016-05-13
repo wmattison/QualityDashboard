@@ -1,5 +1,5 @@
-angular.module('app', [])
+var app = angular.module('app', []);
 
-.controller('home', function($scope){
-    $scope.greeting = 'hello!';
-  });
+app.controller('home', function ($scope) {
+  $scope.greeting = 'hello!';
+});
